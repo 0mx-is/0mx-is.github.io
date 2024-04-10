@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Development</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+
+<body class="bg-gray-200 flex items-center justify-center h-screen">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold mb-4">Site Under Development</h1>
+        <p class="text-lg text-gray-700 mb-8">We are working on something awesome for you! Stay tuned.</p>
+        <div id="logo" class="inline-block w-16 h-16 bg-blue-500 rounded-full"></div>
+    </div>
+
+    <script>
+        // GSAP Animation
+        gsap.to("#logo", {
+            duration: 2,
+            rotation: 360,
+            repeat: -1,
+            ease: "linear"
+        });
+    </script>
+</body>
+
+</html>
